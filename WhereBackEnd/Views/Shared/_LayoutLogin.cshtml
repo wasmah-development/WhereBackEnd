@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/SiteStyle/css/main.css" rel="stylesheet">
+
+</head>
+<body class="text-center">
+    <div class="LoginForm">
+        <div class="FormSec">
+            @RenderBody()
+        </div>
+        <div class="imgSec">
+            <div class="overLayBlueLogin"></div>
+        </div>
+
+    </div>
+    <p class="text-center Footer">All Copyrights reserved to <a href="#">Wasmah</a> © 2020</p>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".imgSec").height($(window).height() - 40);
+        });
+    </script>
+</body>
+</html>

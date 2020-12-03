@@ -1,0 +1,598 @@
+body,
+html {
+    background: #edf1f5;
+}
+.m-0-l-r {
+    margin-left: 0;
+    margin-right: 0;
+}
+.container-fluid {
+    padding-top: 20px;
+}
+.table > thead > tr > th {
+    background-color: #e97c27 !important;
+    color: #fff;
+}
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after {
+    width: 12px;
+    font-family: "Font Awesome 5 Free";
+    color: #fff;
+}
+.dataTables_length,
+.dataTables_filter {
+    display: none;
+}
+.bg-title .breadcrumb .active {
+    color: #e97c27;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: none;
+    background-color: #e97c27;
+    border-color: #e97c27;
+    color: #fff !important;
+}
+.navbar-header {
+    background-color: #012943;
+}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    vertical-align: middle;
+}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    padding: 9px 5px;
+}
+.table > tbody > tr > td a {
+    padding: 7px 17px;
+    background-color: #012943;
+    color: #fff;
+    margin: 0 2px;
+    font-size: 16px;
+}
+    .table > tbody > tr > td a.Edit {
+        background-color: #012943;
+    }
+    .table > tbody > tr > td a.Yellow {
+        background-color: #e97c27;
+        color: #000;
+    }
+    .table > tbody > tr > td a.Delete {
+        background-color: #f00;
+    }
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    color: #012943;
+    font-weight: 600;
+}
+.white-box {
+    padding: 25px 25px 10px;
+    margin-bottom: 20px;
+}
+.form-group label {
+    line-height: 35px;
+    padding: 0;
+    font-size: 12px;
+}
+.AdvancedSearch {
+    display: none;
+}
+.modal-footer .btn-primary,
+.modal-footer .btn-primary:hover,
+.modal-footer .btn-primary:focus{
+    background-color: #e97c27;
+    border-color: #e97c27;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #e97c27;
+}
+.modal-title {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+}
+.modal-header .close {
+    color: #af0000;
+    text-shadow: none;
+    opacity: 1;
+}
+.table > thead > tr > td {
+    cursor: pointer;
+}
+.form-group .SearchForm {
+    background-color: #e97c27;
+    color: #fff;
+    border: none;
+    padding: 9px 20px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+    .form-group .SearchForm.Edit {
+        color: #fff;
+        background-color: #012943;
+        cursor: pointer;
+    }
+    .form-group .SearchForm.OpenPopup {
+        background-color: #012943;
+        color: #fff;
+        border: none;
+        padding: 7px 20px;
+        width: 100%;
+    }
+    .top-left-part {
+        text-align: center;
+    }
+
+.LoginForm {
+    height: calc(100% - 40px);
+}
+
+    .LoginForm .imgSec {
+        display: inline-block;
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+        .LoginForm .imgSec img {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        .LoginForm .imgSec .overLayBlueLogin {
+            position: absolute;
+            z-index: 3;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: #071335;
+            opacity: 0.8;
+        }
+
+    .LoginForm .FormSec {
+        background-color: #fff;
+        height: auto !important;
+        display: inline-block;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 380px;
+        max-width: 90%;
+        padding: 60px 20px;
+        max-height: 80%;
+        z-index: 99;
+    }
+
+        .LoginForm .FormSec .TopMask {
+            width: 100%;
+            margin-bottom: 10px;
+            max-width: 100%;
+        }
+
+        .LoginForm .FormSec form .SecInput {
+            margin-bottom: 20px;
+            color: #999;
+            border: 1px solid #e97c27;
+        }
+
+        .LoginForm .FormSec form {
+            padding: 0px 10px;
+            text-align: center;
+        }
+
+            .LoginForm .FormSec form label.checkbox {
+                text-align: start;
+                padding: 0 10px;
+            }
+
+        .LoginForm .FormSec img {
+            margin: auto;
+            margin-bottom: 20px;
+            max-width: 90%;
+        }
+
+        .LoginForm .FormSec form .SecInput i {
+            width: 25px;
+            margin: 0 5px;
+        }
+
+        .LoginForm .FormSec form .SecInput .form-control {
+            display: inline-block;
+            width: calc(100% - 42px);
+            background-color: transparent;
+            border: none;
+            box-shadow: none;
+            outline: none;
+        }
+
+        .LoginForm .FormSec form .LoginBtn,
+        .LoginForm .FormSec form .LoginBtn:hover,
+        .LoginForm .FormSec form .LoginBtn:focus {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color:#012943;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+        }
+
+.LoginLabel {
+    margin: 10px 0 20px;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.checkbox {
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: -webkit-box;
+    display: flex;
+    position: relative;
+}
+
+    .checkbox:hover input ~ .checkbox__checkmark {
+        background-color: #aaa;
+    }
+
+    .checkbox input {
+        cursor: pointer;
+        height: 0;
+        opacity: 0;
+        position: absolute;
+        width: 0;
+    }
+
+        .checkbox input:checked ~ .checkbox__checkmark, .checkbox input:checked:hover ~ .checkbox__checkmark {
+            background-color: #0ca4f2;
+        }
+
+            .checkbox input:checked ~ .checkbox__checkmark::after, .checkbox input:checked:hover ~ .checkbox__checkmark::after {
+                display: block;
+            }
+
+        .checkbox input:focus ~ .checkbox__checkmark {
+            border-color: #0ca4f2;
+        }
+
+.checkbox__checkmark {
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #cacaca;
+    border: 1px solid transparent;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+    .checkbox__checkmark::after {
+        border: solid #fff;
+        border-width: 0 3px 3px 0;
+        content: "";
+        display: none;
+        height: 10px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        width: 5px;
+    }
+
+.Footer {
+    margin: 0;
+    padding: 10px;
+    background-color: #012943;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    height: 40px;
+    letter-spacing: 1px;
+    left: 0;
+}
+
+    .Footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+.dropdown-menu {
+    padding: 0;
+}
+.dropdown-menu a.dropdown-item {
+    display: block;
+    padding:10px;
+    border-bottom: 1px solid #ededed;
+    color: #000;
+}
+    .dropdown-menu a.dropdown-item i {
+        color: #012943;
+    }
+    .dropdown-menu a.dropdown-item:hover {
+       background-color: #012943;
+       color: #fff;
+    }
+        .dropdown-menu a.dropdown-item:hover i {
+            color: #fff;
+        }
+.RequestTabs a {
+    width: 24%;
+    display: inline-block;
+    text-align: center;
+    padding: 16px;
+    color: #fff;
+    background-color: #2f323e;
+    font-size: 17px;
+}
+.custom-checkbox label {
+    color: #012943;
+    font-size: 14px;
+}
+.borderCustom label {
+    color: #012943;
+}
+.borderCustom {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 10px;
+}
+    .borderCustom .form-control {
+        margin-bottom: 10px;
+    }
+.SubmitBtn {
+    border: none;
+    padding: 9px 20px;
+    background-color: #2f323e;
+}
+.dataQouta {
+    background-color: #ededed;
+    border: 1px solid #ccc;
+    color: #000;
+}
+    .dataQouta .col-lg-3 {
+        padding: 6px 2px 6px 25px;
+        font-size: 14px;
+    }
+.CheckBox {
+    padding-left: 15px;
+}
+    .CheckBox input[type=checkbox] {
+        height: 18px;
+        width: 18px;
+    }
+
+.AcceptModal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.62);
+    padding: 10px;
+    z-index: 9998;
+    text-align: center;
+    overflow: auto;
+}
+
+.ContainerModal {
+    width: 80%;
+    margin: 60px auto;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 15px;
+    border-radius: 4px;
+}
+
+    .ContainerModal .CloseSideBar {
+        text-align: start;
+    }
+    .ContainerModal .footerBtn button {
+        width: 100%;
+        background-color: #e97c27;
+        color: #000;
+        border: none;
+        padding: 7px 20px;
+        font-weight: 600;
+    }
+    .ContainerModal .footerBtn button.Close {
+        background-color: #999;
+        color: #fff;
+    }
+    .ContainerModal .footerBtn {
+        padding-top: 11px;
+        border-top: 1px solid #ccc;
+    }
+.ContainerModal .CloseSideBar img {
+    width: 15px;
+}
+
+    .ContainerModal.BranchLocation {
+        width: 90%;
+        margin: 20px auto 0;
+        height: calc(100% - 45px);
+    }
+
+    .ContainerModal .MessageSec {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 0px;
+        font-size: 23px;
+        font-weight: 600;
+        margin-bottom: 13px;
+        border-bottom: 2px solid #888;
+    }
+
+    .ContainerModal.BranchLocation .MessageSec {
+        padding: 0 10px;
+        border-bottom: none;
+    }
+fieldset {
+    border: 1px solid #dfdfdf;
+    margin-bottom: 23px;
+}
+    fieldset legend {
+        display: inline-block;
+        width: auto;
+        border: none;
+        padding: 0 12px;
+        margin: 0 10px;
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+.ImgContainer {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.ImgContainer  img{
+    height: 100%;
+    width: 100%;
+}
+.circle {
+    border-radius: 5px !important;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.p-image input {
+    display: none;
+}
+    img.profile-pic {
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding: 0;
+    }
+
+.p-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 15px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: #666666;
+    transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+
+    .p-image:hover {
+        transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+    }
+
+.upload-button {
+    font-size: 1.2em;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    background-color: #efefef;
+    border: 1px solid #ccc;
+    padding: 7px 8px 6px;
+    line-height: 19px;
+    border-radius: 50%;
+}
+
+    .upload-button:hover {
+        transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+        color: #999;
+    }
+.labelImg {
+    color: #000;
+    margin-bottom: 10px;
+}
+.navbar-header .light-logo {
+    width: 95px;
+}
+.navbar-top-links > li > a b{
+    margin: 0 8px;
+
+}
+.hide-sidebar .top-left-part {
+    position: relative;
+}
+#side-menu li a {
+    color: #012943;
+    border-top: 1px solid #ededed;
+}
+#side-menu li a:hover, #side-menu li a:focus,
+#side-menu > li > a.active{
+    background-color: #e97c27 !important;
+    color: #fff !important;
+}
+#side-menu > li > a {
+    padding: 15px 20px 15px 20px;
+}
+#side-menu .waves-effect i.IconLine {
+    position: relative;
+    text-align: start;
+    width: 25px;
+}
+#side-menu .waves-effect i:not(.IconLine) {
+    position: relative;
+    top: 5px;
+    font-size: 11px;
+    -moz-transition: transform 0.5s ease;
+    -webkit-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;
+}
+#side-menu .waves-effect.active i:not(.IconLine) {
+    -moz-transition: transform 0.5s ease;
+    -webkit-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;
+}
+#side-menu .ChildNav {
+    padding: 0;
+    background-color: #fbfbfb;
+    display: none;
+    /*position: relative;
+    overflow: hidden;
+    height: 0;
+    -moz-transition: height 0.5s ease;
+    -webkit-transition: height 0.5s ease;
+    -o-transition: height 0.5s ease;
+    transition: height 0.5s ease;*/
+}
+    /*#side-menu .ChildNav.active {
+        height: auto;
+        -moz-transition: height 0.5s ease;
+        -webkit-transition: height 0.5s ease;
+        -o-transition: height 0.5s ease;
+        transition: height 0.5s ease;
+    }*/
+
+@media (max-width: 992px) {
+    .LoginForm .imgSec {
+            display: none;
+        }
+
+        .LoginForm .FormSec .TopMask {
+            opacity: 0;
+            margin-bottom: 0;
+            height: 100px;
+        }
+
+        .LoginForm .FormSec {
+            display: block;
+            position: static;
+            transform: unset;
+            margin: 0;
+            width: 100%;
+            left: 0;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+            .LoginForm .FormSec form {
+                padding: 0px 30px;
+            }
+    }

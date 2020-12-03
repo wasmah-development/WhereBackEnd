@@ -1,0 +1,117 @@
+body {
+    direction: rtl;
+}
+    .top-left-part {
+     float: right;
+    }
+.pull-right {
+    float: left !important;
+}
+
+.pull-left {
+    float: right !important;
+}
+
+#side-menu {
+    padding: 0;
+}
+
+.sidebar .fa-fw {
+    margin-right: 0;
+    margin-left: 7px;
+}
+
+.navbar-top-links {
+    padding-right: 0;
+    padding-left: 40px;
+}
+
+.bg-title .breadcrumb {
+    background: 0 0;
+    margin-bottom: 0;
+    float: left;
+    padding: 0;
+}
+.fa-fw {
+    text-align: right !important;
+}
+.sidebar {
+    right: 0;
+    transition: all 0.5s;
+}
+.hide-sidebar .sidebar {
+    left: unset;
+    right: -100%;
+    transition: all 0.5s;
+}
+.dropdown-menu a.dropdown-item {
+    text-align: right;
+}
+#side-menu .ChildNav > li > a {
+    padding: 15px 35px 15px 0px;
+}
+#side-menu .waves-effect i:not(.IconLine) {
+    float: left;
+    transform: rotate(0);
+}
+
+#side-menu .waves-effect.active i:not(.IconLine) {
+    transform: rotate(-90deg);
+}
+#side-menu > li > a.active {
+    border-right: 5px solid #012943;
+}
+.modal-header .close {
+    float: left;
+}
+.table > thead > tr > th,
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    text-align: right;
+}
+.modal-footer {
+    text-align: left;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    right: unset;
+    left: 1px;
+}
+@media (min-width: 1170px) {
+    .top-left-part {
+        right: 0;
+    }
+}
+@media (min-width: 1200px) {
+    [class*="col-"] {
+        float: right;
+    }
+
+    .col-12,
+    .col-md-12,
+    .col-lg-12 {
+        float: unset !important;
+        width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-offset-8 {
+        margin-left: 0;
+        margin-right: 66.66666667%;
+    }
+    .col-md-offset-1 {
+        margin-right: 8.33333333%;
+        margin-left: 0;
+    }
+}
+@media (min-width: 1170px) {
+    .hide-sidebar #page-wrapper {
+        margin-right: 0;
+        transition: all 0.5s;
+    }
+}
+@media (min-width: 768px) {
+    #page-wrapper {
+        margin-right: 270px;
+        margin-left: 0;
+        transition: all 0.5s;
+    }
+}

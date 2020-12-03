@@ -1,0 +1,37 @@
+#side-menu .waves-effect i:not(.IconLine) {
+    float: right;
+    transform: rotate(180deg);
+}
+
+#side-menu .waves-effect.active i:not(.IconLine) {
+    transform: rotate(270deg);
+}
+#side-menu .ChildNav > li > a {
+    padding: 15px 0px 15px 35px;
+}
+#side-menu > li > a.active {
+    border-left: 5px solid #012943;
+}
+.sidebar {
+    left: 0;
+    transition: all 0.5s;
+}
+.hide-sidebar .sidebar {
+    right: unset;
+    left: -100%;
+    transition: all 0.5s;
+}
+@media (min-width: 1170px) {
+    .hide-sidebar #page-wrapper {
+        margin-left: 0;
+        transition: all 0.5s;
+    }
+}
+
+@media (min-width: 768px) {
+    #page-wrapper {
+        margin-left: 240px;
+        margin-right: 0;
+        transition: all 0.5s;
+    }
+}

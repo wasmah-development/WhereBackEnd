@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="wwwroot\SiteStyle\css\Language\English\" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Include="wwwroot\SiteStyle\plugins\date\bootstrap-material-datetimepicker.js" />
+    <None Include="wwwroot\SiteStyle\plugins\date\moment.min.js" />
+  </ItemGroup>
+
+</Project>

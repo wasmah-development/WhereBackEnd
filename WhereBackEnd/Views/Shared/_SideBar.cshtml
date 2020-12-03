@@ -1,0 +1,46 @@
+﻿<div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav slimscrollsidebar">
+        <div class="sidebar-head">
+            <h3>
+                <span class="fa-fw open-close"><i class="ti-close ti-menu"></i></span> <span class="hide-menu">Navigation</span>
+            </h3>
+        </div>
+        <ul class="nav" id="side-menu">
+            <li style="padding: 60px 0 0;">
+                <a href="javascript:void(0)" onclick="ShowChildNav(this)" class="waves-effect">
+                    <i class="fas fa-home IconLine"></i>Home
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+                <ul class="nav ChildNav">
+                    <li>
+                        <a asp-controller="Home" asp-action="searchpage" class="waves-effect">
+                            <i class="fas fa-car-side IconLine"></i>رحلاتى
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="Home" asp-action="searchpage" class="waves-effect">
+                            <i class="fas fa-map-marker-alt IconLine"></i>المناطق
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="Home" asp-action="searchpage" class="waves-effect">
+                            <i class="far fa-address-book IconLine"></i>حجوزات
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a asp-controller="Home" asp-action="searchpage" class="waves-effect">
+                    <i class="far fa-user IconLine"></i>User
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            </li>
+            <li>
+                <a asp-controller="Home" asp-action="Privacy" class="waves-effect">
+                    <i class="fas fa-exclamation-triangle IconLine"></i>Error 404
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
