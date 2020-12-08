@@ -4,6 +4,8 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    <link href="~/SiteStyle/css/fontawesome/all.min.css" rel="stylesheet" />
+
     <link href="~/SiteStyle/css/main.css" rel="stylesheet">
 
 </head>
@@ -14,6 +16,7 @@
         </div>
         <div class="imgSec">
             <div class="overLayBlueLogin"></div>
+            <img class="BgImgLogin" src="~/SiteStyle/plugins/images/bg.png" />
         </div>
 
     </div>
@@ -21,7 +24,7 @@
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script>
         $(document).ready(function () {
-            $(".imgSec").height($(window).height() - 40);
+            $(".imgSec").height($(window).height() - 44);
         });
     </script>
 </body>

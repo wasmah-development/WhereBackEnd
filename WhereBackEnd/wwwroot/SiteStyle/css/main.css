@@ -1,6 +1,7 @@
 body,
 html {
     background: #edf1f5;
+    margin: 0;
 }
 .m-0-l-r {
     margin-left: 0;
@@ -197,7 +198,7 @@ table.dataTable thead .sorting_asc:after {
         }
 
         .LoginForm .FormSec form .SecInput i {
-            width: 25px;
+            width: 23px;
             margin: 0 5px;
         }
 
@@ -208,6 +209,7 @@ table.dataTable thead .sorting_asc:after {
             border: none;
             box-shadow: none;
             outline: none;
+            height: 40px;
         }
 
         .LoginForm .FormSec form .LoginBtn,
@@ -215,7 +217,7 @@ table.dataTable thead .sorting_asc:after {
         .LoginForm .FormSec form .LoginBtn:focus {
             display: block;
             width: 100%;
-            padding: 10px;
+            padding: 10px 0;
             background-color:#012943;
             color: #fff;
             text-decoration: none;
@@ -288,7 +290,7 @@ table.dataTable thead .sorting_asc:after {
 
 .Footer {
     margin: 0;
-    padding: 10px;
+    padding: 0 30px;
     background-color: #012943;
     color: #fff;
     font-weight: 600;
@@ -296,6 +298,7 @@ table.dataTable thead .sorting_asc:after {
     height: 40px;
     letter-spacing: 1px;
     left: 0;
+    line-height: 40px;
 }
 
     .Footer a {
@@ -569,7 +572,9 @@ fieldset {
         -o-transition: height 0.5s ease;
         transition: height 0.5s ease;
     }*/
-
+.LoginForm {
+    background-color: #012943;
+}
 @media (max-width: 992px) {
     .LoginForm .imgSec {
             display: none;

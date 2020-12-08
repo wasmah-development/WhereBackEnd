@@ -73,7 +73,119 @@
             @RenderBody()
         </div>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="EditModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">تعديل الصنف</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <div class="row m-0-l-r">
+                                    <label class="col-md-4">from</label>
+                                    <div class="col-md-7">
+                                        <input class="form-control" type="date">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <div class="row m-0-l-r">
+                                    <label class="col-md-offset-1 col-md-4">to</label>
+                                    <div class="col-md-7">
+                                        <input class="form-control" type="date">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <div class="row m-0-l-r">
+                                    <label class="col-md-4">id</label>
+                                    <div class="col-md-7">
+                                        <input class="form-control" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <div class="row m-0-l-r">
+                                    <label class="col-md-offset-1 col-md-4">name</label>
+                                    <div class="col-md-7">
+                                        <input class="form-control" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <div class="row m-0-l-r">
+                                    <label class="col-md-4">Still</label>
+                                    <div class="col-md-7">
+                                        <select class="select2 form-control">
+                                            <option>Still</option>
+                                            <option>no</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <div class="row m-0-l-r">
+                                    <label class="col-md-offset-1 col-md-4">
+                                        The type of disease
+                                    </label>
+                                    <div class="col-md-7">
+                                        <select class="select2 form-control">
+                                            <option>Heart patient</option>
+                                            <option>diabetic</option>
+                                            <option>Pressure patient</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row form-group m-0-l-r">
+                            <div class="col-md-3 col-md-offset-7">
+                                <a class="SearchForm pull-right Edit" onclick="NormalSearch(this)">Normal Search</a>
+                            </div>
+                            <div class="col-md-2">
+                                <button class="SearchForm pull-right">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+
+    <div class="modal fade" id="DeleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelDelete" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabelDelete">حذف الصنف</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 form-group text-center">
+                            <h3>هل انت متأكد من حذف الصنف ؟</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <p class="text-center Footer">All Copyrights reserved to <a href="#">Wasmah</a> © 2020</p>
     <script src="//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
     <script src="~/SiteStyle/plugins/select2/select2.min.js"></script>

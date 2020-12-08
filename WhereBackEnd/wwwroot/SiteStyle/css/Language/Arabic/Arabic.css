@@ -93,6 +93,10 @@ body {
     }
 }
 @media (min-width: 992px) {
+    .col-md-offset-7 {
+        margin-left: 0;
+        margin-right: 58.33333333%;
+    }
     .col-md-offset-8 {
         margin-left: 0;
         margin-right: 66.66666667%;

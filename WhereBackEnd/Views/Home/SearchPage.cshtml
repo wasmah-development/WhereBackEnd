@@ -5,13 +5,13 @@
 
 <div class="row bg-title m-0-l-r">
     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-        <h4 class="page-title">Search</h4>
+        <h4 class="page-title">Patients</h4>
     </div>
     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
 
         <ol class="breadcrumb">
             <li><a href="#">Home</a></li>
-            <li class="active">Search</li>
+            <li class="active">Patients</li>
         </ol>
     </div>
     <!-- /.col-lg-12 -->
@@ -46,7 +46,7 @@
                 <div class="row">
                     <div class="col-md-6 form-group">
                         <div class="row m-0-l-r">
-                            <label class="col-md-4">من</label>
+                            <label class="col-md-4">from</label>
                             <div class="col-md-7">
                                 <input class="form-control" type="date">
                             </div>
@@ -54,7 +54,7 @@
                     </div>
                     <div class="col-md-6 form-group">
                         <div class="row m-0-l-r">
-                            <label class="col-md-offset-1 col-md-4">الى</label>
+                            <label class="col-md-offset-1 col-md-4">to</label>
                             <div class="col-md-7">
                                 <input class="form-control" type="date">
                             </div>
@@ -78,20 +78,26 @@
                     </div>
                     <div class="col-md-6 form-group">
                         <div class="row m-0-l-r">
-                            <label class="col-md-4">active</label>
+                            <label class="col-md-4">Still</label>
                             <div class="col-md-7">
                                 <select class="select2 form-control">
-                                    <option>active</option>
-                                    <option>not active</option>
+                                    <option>Still</option>
+                                    <option>no</option>
                                 </select>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 form-group">
                         <div class="row m-0-l-r">
-                            <label class="col-md-offset-1 col-md-4">Descripton</label>
+                            <label class="col-md-offset-1 col-md-4">
+                                The type of disease
+                            </label>
                             <div class="col-md-7">
-                                <input class="form-control" value="">
+                                <select class="select2 form-control">
+                                    <option>Heart patient</option>
+                                    <option>diabetic</option>
+                                    <option>Pressure patient</option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -114,8 +120,10 @@
                             <th>id</th>
                             <th>Img</th>
                             <th>name</th>
-                            <th>Descripton</th>
-                            <th>active</th>
+                            <th>The type of disease</th>
+                            <th>
+                                Follow up
+                            </th>
                             <th></th>
                         </tr>
                     </thead>
@@ -125,9 +133,9 @@
                             <td><img src="~/SiteStyle/plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"></td>
 
                             <td>
-                                Sea Freight
+                             ahmed
                             </td>
-                            <td>Our expertise in handling both LCL Consolidation and FCL shipments with all</td>
+                            <td>diabetic</td>
                             <td>
                                 <div class="CheckBox"><input type="checkbox" checked=""></div>
                             </td>
@@ -141,9 +149,9 @@
                             <td><img src="~/SiteStyle/plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"></td>
 
                             <td>
-                                Sea Freight
+                              mahmoud
                             </td>
-                            <td>Our expertise in handling both LCL Consolidation and FCL shipments with all</td>
+                            <td>diabetic</td>
                             <td>
                                 <div class="CheckBox"><input type="checkbox" checked=""></div>
                             </td>
@@ -153,13 +161,13 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>1</td>
+                            <td>3</td>
                             <td><img src="~/SiteStyle/plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"></td>
 
                             <td>
-                                Sea Freight
+                               sayed
                             </td>
-                            <td>Our expertise in handling both LCL Consolidation and FCL shipments with all</td>
+                            <td>Pressure patient</td>
                             <td>
                                 <div class="CheckBox"><input type="checkbox"></div>
                             </td>
@@ -169,13 +177,13 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>1</td>
+                            <td>4</td>
                             <td><img src="~/SiteStyle/plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"></td>
 
                             <td>
-                                Sea Freight
+                             figo
                             </td>
-                            <td>Our expertise in handling both LCL Consolidation and FCL shipments with all</td>
+                            <td>Pressure patient</td>
                             <td>
                                 <div class="CheckBox"><input type="checkbox"></div>
                             </td>
@@ -191,87 +199,6 @@
 
 
 
-        </div>
-    </div>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="EditModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">تعديل الصنف</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-6 form-group">
-                        <div class="row m-0-l-r">
-                            <label class="col-md-4">id</label>
-                            <div class="col-md-7">
-                                <input class="form-control" value="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <div class="row m-0-l-r">
-                            <label class="col-md-offset-1 col-md-4">name</label>
-                            <div class="col-md-7">
-                                <input class="form-control" value="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <div class="row m-0-l-r">
-                            <label class="col-md-4">active</label>
-                            <div class="col-md-7">
-                              <select class="select2 form-control">
-                                  <option>active</option>
-                                  <option>not active</option>
-                              </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <div class="row m-0-l-r">
-                            <label class="col-md-offset-1 col-md-4">Descripton</label>
-                            <div class="col-md-7">
-                                <input class="form-control" value="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="modal fade" id="DeleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelDelete" aria-hidden="true">
-    <div class="modal-dialog modal-sm" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabelDelete">حذف الصنف</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-12 form-group text-center">
-                        <h3>هل انت متأكد من حذف الصنف ؟</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-danger">Delete</button>
-            </div>
         </div>
     </div>
 </div>

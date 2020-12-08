@@ -31,7 +31,7 @@
                     <div id="chartContainer2" style="height: 300px; width: 100%;"></div>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12">
+            @*<div class="col-lg-6 col-sm-12">
                 <div class="white-box analytics-info">
                     <div id="chartContainer3" style="height: 300px; width: 100%;"></div>
                 </div>
@@ -40,12 +40,12 @@
                 <div class="white-box analytics-info">
                     <div id="chartContainer4" style="height: 300px; width: 100%;"></div>
                 </div>
-            </div>
+            </div>*@
         </div>
         <div class="row">
             <div class="col-lg-4 col-sm-6 col-xs-12">
                 <div class="white-box analytics-info">
-                    <h3 class="box-title">Total Visit</h3>
+                    <h3 class="box-title">Pressure patient</h3>
                     <ul class="list-inline two-part">
                         <li>
                             <div id="sparklinedash"></div>
@@ -56,7 +56,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 col-xs-12">
                 <div class="white-box analytics-info">
-                    <h3 class="box-title">Total Page Views</h3>
+                    <h3 class="box-title">diabetic</h3>
                     <ul class="list-inline two-part">
                         <li>
                             <div id="sparklinedash2"></div>
@@ -67,7 +67,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 col-xs-12">
                 <div class="white-box analytics-info">
-                    <h3 class="box-title">Unique Visitor</h3>
+                    <h3 class="box-title">patient Visitor</h3>
                     <ul class="list-inline two-part">
                         <li>
                             <div id="sparklinedash3"></div>
@@ -86,80 +86,87 @@
         <div class="row">
             <div class="col-md-12 col-lg-12 col-sm-12">
                 <div class="white-box">
-                    <div class="col-md-3 col-sm-4 col-xs-6 pull-right">
-                        <select class="form-control pull-right row b-none">
-                            <option>March 2017</option>
-                            <option>April 2017</option>
-                            <option>May 2017</option>
-                            <option>June 2017</option>
-                            <option>July 2017</option>
-                        </select>
-                    </div>
-                    <h3 class="box-title">Recent sales</h3>
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>NAME</th>
-                                    <th>STATUS</th>
-                                    <th>DATE</th>
-                                    <th>PRICE</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td class="txt-oflo">Elite admin</td>
-                                    <td>SALE</td>
-                                    <td class="txt-oflo">April 18, 2017</td>
-                                    <td><span class="text-success">$24</span></td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td class="txt-oflo">Real Homes WP Theme</td>
-                                    <td>EXTENDED</td>
-                                    <td class="txt-oflo">April 19, 2017</td>
-                                    <td><span class="text-info">$1250</span></td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td class="txt-oflo">Ample Admin</td>
-                                    <td>EXTENDED</td>
-                                    <td class="txt-oflo">April 19, 2017</td>
-                                    <td><span class="text-info">$1250</span></td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td class="txt-oflo">Medical Pro WP Theme</td>
-                                    <td>TAX</td>
-                                    <td class="txt-oflo">April 20, 2017</td>
-                                    <td><span class="text-danger">-$24</span></td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td class="txt-oflo">Hosting press html</td>
-                                    <td>SALE</td>
-                                    <td class="txt-oflo">April 21, 2017</td>
-                                    <td><span class="text-success">$24</span></td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td class="txt-oflo">Digital Agency PSD</td>
-                                    <td>SALE</td>
-                                    <td class="txt-oflo">April 23, 2017</td>
-                                    <td><span class="text-danger">-$14</span></td>
-                                </tr>
-                                <tr>
-                                    <td>7</td>
-                                    <td class="txt-oflo">Helping Hands WP Theme</td>
-                                    <td>MEMBER</td>
-                                    <td class="txt-oflo">April 22, 2017</td>
-                                    <td><span class="text-success">$64</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <h3 class="box-title">patient this week</h3>
+                    <table class="table DataTB">
+                        <thead>
+                            <tr>
+                                <th>id</th>
+                                <th>Img</th>
+                                <th>name</th>
+                                <th>The type of disease</th>
+                                <th>
+                                    Follow up
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><img src="~/SiteStyle/plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"></td>
+
+                                <td>
+                                    ahmed
+                                </td>
+                                <td>diabetic</td>
+                                <td>
+                                    <div class="CheckBox"><input type="checkbox" checked=""></div>
+                                </td>
+                                <td>
+                                    <a data-toggle="modal" data-target="#EditModal" class="Edit">Edit</a>
+                                    <a data-toggle="modal" data-target="#DeleteModal" class="Delete">Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img src="~/SiteStyle/plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"></td>
+
+                                <td>
+                                    mahmoud
+                                </td>
+                                <td>diabetic</td>
+                                <td>
+                                    <div class="CheckBox"><input type="checkbox" checked=""></div>
+                                </td>
+                                <td>
+                                    <a data-toggle="modal" data-target="#EditModal" class="Edit">Edit</a>
+                                    <a data-toggle="modal" data-target="#DeleteModal" class="Delete">Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><img src="~/SiteStyle/plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"></td>
+
+                                <td>
+                                    sayed
+                                </td>
+                                <td>Pressure patient</td>
+                                <td>
+                                    <div class="CheckBox"><input type="checkbox"></div>
+                                </td>
+                                <td>
+                                    <a data-toggle="modal" data-target="#EditModal" class="Edit">Edit</a>
+                                    <a data-toggle="modal" data-target="#DeleteModal" class="Delete">Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><img src="~/SiteStyle/plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"></td>
+
+                                <td>
+                                    figo
+                                </td>
+                                <td>Pressure patient</td>
+                                <td>
+                                    <div class="CheckBox"><input type="checkbox"></div>
+                                </td>
+                                <td>
+                                    <a data-toggle="modal" data-target="#EditModal" class="Edit">Edit</a>
+                                    <a data-toggle="modal" data-target="#DeleteModal" class="Delete">Delete</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -180,18 +187,18 @@
         },
 
         title: {
-            text: 'Total fruit consumption, grouped by gender'
+            text: 'قسم الاسنان'
         },
 
         xAxis: {
-            categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+            categories: ['زرع اسنان', 'حشو عصب', 'خلع ضرس', 'حشو عادى', 'تركيب طربوش']
         },
 
         yAxis: {
             allowDecimals: false,
             min: 0,
             title: {
-                text: 'Number of fruits'
+                text: 'عيادة الاسنان'
             }
         },
 
@@ -210,21 +217,21 @@
         },
 
         series: [{
-            name: 'John',
+            name: 'د. احمد',
             data: [5, 3, 4, 7, 2],
             stack: 'male'
         }, {
-            name: 'Joe',
+            name: 'د. محمد',
             data: [3, 4, 4, 2, 5],
             stack: 'male'
         }, {
-            name: 'Jane',
+            name: 'د. محمود',
             data: [2, 5, 6, 2, 1],
-            stack: 'female'
+                stack: 'male'
         }, {
-            name: 'Janet',
+            name: 'د. عبد الله',
             data: [3, 0, 4, 4, 3],
-            stack: 'female'
+                stack: 'male'
         }]
     });
 
@@ -235,15 +242,15 @@
             type: 'column'
         },
         title: {
-            text: 'Stacked column chart'
+            text: 'قسم الاسنان'
         },
         xAxis: {
-            categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+            categories: ['زرع اسنان', 'حشو عصب', 'خلع ضرس', 'حشو عادى', 'تركيب طربوش']
         },
         yAxis: {
             min: 0,
             title: {
-                text: 'Total fruit consumption'
+                text: 'عيادة الاسنان'
             },
             stackLabels: {
                 enabled: true,
@@ -281,19 +288,22 @@
             }
         },
         series: [{
-            name: 'John',
-            data: [5, 3, 4, 7, 2]
+            name: 'د. احمد',
+            data: [5, 3, 4, 7, 2],
+            stack: 'male'
         }, {
-            name: 'Jane',
-            data: [2, 2, 3, 2, 1]
-        }, {
-            name: 'Joe',
-            data: [3, 4, 4, 2, 5]
-        }]
+                name: 'د. محمد',
+                data: [3, 4, 4, 2, 5],
+                stack: 'male'
+            }, {
+                name: 'د. محمود',
+                data: [2, 5, 6, 2, 1],
+                stack: 'male'
+            }]
     });
 
 </script>
-<script type="text/javascript">
+@*<script type="text/javascript">
     // Build the chart
     Highcharts.chart('chartContainer3', {
         chart: {
@@ -658,4 +668,4 @@
                 ]
             }
         });
-</script>
+</script>*@
